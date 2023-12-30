@@ -1,0 +1,63 @@
+.side-panel {
+    background-color: rgb(3, 3, 29);
+    color: #fff;
+    height: 100vh;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.side-panel-info {
+    width: 100%;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.side-panel ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-panel li {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.side-panel button {
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button.active {
+    background-color: #fff;
+    color: rgb(3, 3, 29);
+    width: 80%;
+    border-radius: 5px;
+}
+
+button.notActive {
+    background-color: transparent;
+    color: #fff;
+}
